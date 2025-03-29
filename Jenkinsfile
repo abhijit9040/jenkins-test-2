@@ -5,11 +5,11 @@ pipeline {
         maven 'maven'  
     }
     stages {
-    //     stage('Build') {
-    //         steps {
-    //             bat 'mvn  -DskipTests clean package'
-    //         }
-    //     }
+        stage('Build') {
+            steps {
+                bat 'mvn  -DskipTests clean package'
+            }
+        }
         stage('Test') {
             steps {
                 bat 'mvn test'
