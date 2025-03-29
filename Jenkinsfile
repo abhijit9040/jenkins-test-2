@@ -4,7 +4,7 @@ pipeline {
     tools {
         maven 'maven'  
     }
-    // stages {
+    stages {
     //     stage('Build') {
     //         steps {
     //             bat 'mvn  -DskipTests clean package'
